@@ -268,28 +268,28 @@ function video(bid) {
     if (playbackmethod) {
       video.playbackmethod = playbackmethod;
     }
-    if (plcmt) {
+    if (utils.isInteger(plcmt)) {
       video.plcmt = plcmt;
     }
-    if (pos) {
+    if (utils.isInteger(pos)) {
       video.pos = pos;
     }
-    if (startdelay && utils.isInteger(startdelay)) {
+    if (utils.isInteger(startdelay)) {
       video.startdelay = startdelay;
     }
-    if (skip && (skip === 0 || skip === 1)) {
+    if (skip === 0 || skip === 1) {
       video.skip = skip;
     }
-    if (skipmin && utils.isInteger(skipmin)) {
+    if (utils.isInteger(skipmin)) {
       video.skipmin = skipmin;
     }
-    if (skipafter && utils.isInteger(skipafter)) {
+    if (utils.isInteger(skipafter)) {
       video.skipafter = skipafter;
     }
-    if (minbitrate && utils.isInteger(minbitrate)) {
+    if (utils.isInteger(minbitrate)) {
       video.minbitrate = minbitrate;
     }
-    if (maxbitrate && utils.isInteger(maxbitrate)) {
+    if (utils.isInteger(maxbitrate)) {
       video.maxbitrate = maxbitrate;
     }
 
